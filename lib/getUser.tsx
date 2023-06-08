@@ -4,7 +4,7 @@ export default async function getUser(userId: string) {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to get user");
+    undefined;
   }
 
   return res.json();
